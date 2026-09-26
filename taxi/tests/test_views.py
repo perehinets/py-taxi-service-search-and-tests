@@ -5,9 +5,9 @@ from django.urls import reverse
 from taxi.models import Manufacturer, Car
 
 
-MANUFACTURER_URL = reverse('taxi:manufacturer-list')
-CAR_URL = reverse('taxi:car-list')
-DRIVER_URL = reverse('taxi:driver-list')
+MANUFACTURER_URL = reverse("taxi:manufacturer-list")
+CAR_URL = reverse("taxi:car-list")
+DRIVER_URL = reverse("taxi:driver-list")
 NUMBER_OF_OBJECT = 10
 NUMBER_PER_PAGE = 5
 USER = get_user_model()
