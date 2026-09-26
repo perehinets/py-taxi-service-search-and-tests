@@ -109,7 +109,7 @@ class PrivateCarTest(TestCase):
         )
 
     def test_search_cars(self):
-        response = self.client.get(CAR_URL, {"name":"X1"})
+        response = self.client.get(CAR_URL, {"model":"X1"})
         self.assertContains(response, "X1")
 
     def test_cars_search_partial_match(self):
